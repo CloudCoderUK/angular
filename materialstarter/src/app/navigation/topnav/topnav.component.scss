@@ -1,0 +1,89 @@
+/*.app-toolbar-filler {
+  flex: 1 1 auto;
+}
+*/
+.app-toolbar {
+  background: #263238;
+  color: white;
+}
+
+.app-toolbar-menu {
+  padding: 0 14px 0 14px;
+}
+
+.app-icon-button {
+  color: white;
+  box-shadow: none;
+  user-select: none;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  filter: none;
+  font-weight: normal;
+  height: 100%;
+  line-height: inherit;
+  margin: 0;
+  margin-right: 16px;
+  margin-left: -16px;
+  min-width: 0;
+  padding: 0;
+  text-align: left;
+  text-decoration: none;
+}
+
+.app-icon-button:hover {
+  background: black;
+}
+
+.app-icon-button:focus {
+  outline: none;
+}
+
+// .app-toolbar-menu2 {
+//   padding: 0 14px 0 14px;
+// }
+
+.app-icon-button2 {
+  color: white;
+  box-shadow: none;
+  user-select: none;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  filter: none;
+  font-weight: normal;
+  // height: 100%;
+  line-height: inherit;
+  margin: 0;
+  // margin-right: 16px;
+  // margin-left: -16px;
+  min-width: 0;
+  padding: 0;
+  text-align: left;
+  text-decoration: none;
+}
+
+.app-icon-button2:hover {
+  background: black;
+  //color: lightskyblue;
+}
+
+.app-icon-button2:focus {
+  outline: none;
+}
+
+#user-dropdown-toggler {
+  width: auto;
+  &[md-icon-button] {
+    border-radius: 3px;
+    padding: 10px;
+    line-height: 44px;
+  }
+}
+
+/* LG Had to add this in Feb 2017 when material alpha 6 was released */
+.circle {
+  height: 40px;
+  widows: 40px;
+  border-radius: 50%;
+}

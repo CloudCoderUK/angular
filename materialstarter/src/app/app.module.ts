@@ -2,7 +2,9 @@ import {BrowserModule} from '@angular/platform-browser';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import {NgModule} from '@angular/core';
 import {CommonModule} from '@angular/common';
-import {FormsModule, ReactiveFormsModule} from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { RouterModule, Routes } from '@angular/router';
+import { appRoutes } from './app.routes';
 
 import {A11yModule} from '@angular/cdk/a11y';
 import {BidiModule} from '@angular/cdk/bidi';
@@ -52,7 +54,10 @@ import {
   MatTooltipModule,
   MatTreeModule,
 } from '@angular/material';
-import {AppComponent} from './app.component';
+
+import { AppComponent } from './app.component';
+import { TopnavComponent } from './navigation/topnav/topnav.component';
+import { SampleComponent } from './sample/sample.component';
 
 /**
  * NgModule that includes all Material modules that are required to serve the app.
@@ -117,11 +122,16 @@ export class MaterialModule {}
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    TopnavComponent,
+    SampleComponent
   ],
   imports: [
     BrowserModule,
+    BrowserAnimationsModule,
     MaterialModule,
+    RouterModule,
+    appRoutes
   ],
   providers: [],
   bootstrap: [AppComponent]
