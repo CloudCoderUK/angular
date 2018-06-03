@@ -1,17 +1,17 @@
 <mat-sidenav-container>
 
-    <mat-sidenav mode='side' opened>
+    <mat-sidenav mode='side' opened='{{isSideNavOpen}}'>
       <app-sidenav></app-sidenav>
     </mat-sidenav>
    
     <mat-sidenav-content>
         <app-topnav
-        [title]="topNavTitle"
-         (toggleSideNavClick)="onToggleSideNavClick();">
+        [title]='topNavTitle'
+         (toggleSideNavClick)='onToggleSideNavClick();'>
         </app-topnav>
         
         <router-outlet></router-outlet>
         <div style="height: 500px">&nbsp;</div>
     </mat-sidenav-content>
   
-  </mat-sidenav-container>
+</mat-sidenav-container>

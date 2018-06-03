@@ -9,4 +9,9 @@ import { VERSION } from '@angular/material';
 })
 export class AppComponent {
   version = VERSION;
+  public isSideNavOpen = true;
+
+  onToggleSideNavClick(): void {
+    this.isSideNavOpen = !this.isSideNavOpen;
+  }
 }
