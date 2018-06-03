@@ -1,51 +1,17 @@
-<!-- <div>top nav will go here</div> -->
-
-  <app-topnav
-  [title]="topNavTitle"
-   (toggleSideNavClick)="onToggleSideNavClick();">
-    </app-topnav>
-
 <mat-sidenav-container>
 
-  <!-- <app-topnav
-  [title]="topNavTitle"
-   (toggleSideNavClick)="onToggleSideNavClick();">
-    </app-topnav> -->
-
-  <!-- <fm-topnav
-  [title]="topNavTitle"
-   (toggleSideNavClick)="onToggleSideNavClick();">
-    </fm-topnav> -->
-
+    <mat-sidenav mode='side' opened>
+      <app-sidenav></app-sidenav>
+    </mat-sidenav>
    
-  
-    <!-- <md-sidenav #sidenav mode="side" opened="{{isSideNavOpen}}" class="asspp-sidenav" class="msss2app-dark">
-      <fm-sidenav></fm-sidenav>
-    </md-sidenav> -->
-
-    <mat-sidenav mode='side' opened>Start</mat-sidenav>
-    <mat-sidenav-content><router-outlet></router-outlet></mat-sidenav-content>
-  
-    
-  
-    <!-- <div class="app-content">
-      <router-outlet></router-outlet>
-      <div style="height: 500px">&nbsp;</div>
-  </div> -->
+    <mat-sidenav-content>
+        <app-topnav
+        [title]="topNavTitle"
+         (toggleSideNavClick)="onToggleSideNavClick();">
+        </app-topnav>
+        
+        <router-outlet></router-outlet>
+        <div style="height: 500px">&nbsp;</div>
+    </mat-sidenav-content>
   
   </mat-sidenav-container>
-
-
-
-
-
-<!-- <mat-toolbar color="primary">
-  Angular Material 2 App
-</mat-toolbar>
-<div class="basic-container">
-  <p>
-    <button mat-button>Basic Button</button>
-    <mat-slide-toggle>Slide Toggle</mat-slide-toggle>
-  </p>
-  <span class="version-info">Current build: {{version.full}}</span>
-</div> -->
