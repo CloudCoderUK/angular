@@ -5,3 +5,8 @@
 body {
     margin: 0;
   }
+
+  mat-sidenav {
+    width: 250px;
+    max-width: 250px;
+  }

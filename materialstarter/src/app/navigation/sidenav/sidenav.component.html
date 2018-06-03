@@ -1,27 +1,21 @@
-<div>
- <mat-toolbar>
-<span>Application Name</span>
-</mat-toolbar> 
+<mat-toolbar>
+  <img class='logo' src='assets/images/logo.png' />
+  <span>App Name</span>
+</mat-toolbar>
 
+<nav>
+  <button mat-button (click)='gotoHome()'>
+    <mat-icon>home</mat-icon>
+    Home
+  </button>
 
+  <button mat-button (click)='gotoDashboard()'>
+    <mat-icon>dashboard</mat-icon>
+    Dashboard
+  </button>
 
-  <nav>
-      <button mat-button (click)='gotoHome()'>
-        <mat-icon>home</mat-icon>
-        Home
-      </button>
-      
-      <button mat-button (click)='gotoDashboard()'>
-        <mat-icon>dashboard</mat-icon>
-        Dashboard
-      </button>
-      
-      <button mat-button (click)='gotoSample()'>
-        <mat-icon>pages</mat-icon>
-        Sample
-      </button>
-  
-    </nav> 
-
-
-</div>
+  <button mat-button (click)='gotoSample()'>
+    <mat-icon>pages</mat-icon>
+    Sample
+  </button>
+</nav>
